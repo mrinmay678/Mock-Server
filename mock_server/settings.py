@@ -98,6 +98,8 @@ TEMPLATES = [
     },
 ]
 
+ALLOWED_HOSTS = ["*"]
+
 WSGI_APPLICATION = 'mock_server.wsgi.application'
 
 
