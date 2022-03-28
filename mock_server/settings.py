@@ -25,9 +25,6 @@ SECRET_KEY = 'django-insecure-tu3=i&4w_s9xz9_+7ac83w0ze(7sj5l_@*+9+&71334b2t6bt%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mock_server',
+    'server',
     'rest_framework',
     'corsheaders',
 ]

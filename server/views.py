@@ -4,9 +4,9 @@ from rest_framework.response import Response
 # Create your views here.
 class MockServerView(APIView):
 
-    def post(self, request, service="None"):
+    def post(self, request, service=None):
     
-        if service == "None":
+        if not service:
             return Response(status=400)
         elif service == "signup" or service == "login":
             data= {
@@ -23,9 +23,9 @@ class MockServerView(APIView):
         
         return Response({"status":True,"data":data})
 
-    def get(self, request, service="None"):
+    def get(self, request, service=None):
 
-        if service == "None":
+        if not service:
             return Response(status=400)
         elif service == "location":
             data={
